@@ -29,12 +29,12 @@ export default function RootLayout({ children }) {
        <ThemeProvider attribute="class"
           defaultTheme="light"
           enableSystem={false}>
-        
-            <Navbar />
-            <div className="mx-auto flex w-full max-w-[1600px] flex-1">
-              <Sidebar />
-              <main className="flex-1 p-4 md:p-6">{children}</main>
-            </div>
+        <Navbar />
+          <div className="mx-auto flex w-full max-w-[1600px] flex-1">
+            <Sidebar />
+
+            <main className="flex-1 p-4 md:p-6">{children}</main>
+          </div>
           
        </ThemeProvider>
         </body>
